@@ -12,12 +12,13 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2.2
     - Fixed in version: 4.2.3
-  - [ ] GIF Walkthrough: 
-  <blockquote class="imgur-embed-pub" lang="en" data-id="a/WTXqV"><a href="//imgur.com/WTXqV"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+  - [ ] GIF Walkthrough:
+  <img src='http://i.imgur.com/mbazv3Q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   - [ ] Steps to recreate: 
       Created a post using "Text" mode.
       Put following code in the page.
-      <a href="</a><a title=" onmouseover=alert('test')  ">link</a>
+
+      " <a href="</a><a title=" onmouseover=alert('test')  ">link</a> ""
 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
