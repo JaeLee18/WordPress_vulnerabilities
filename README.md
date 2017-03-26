@@ -23,15 +23,26 @@ Time spent: **X** hours spent in total
   - [ ] Affected source code:
     wp-includes/kses.php
     wp-includes/shortcodes.php
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+2. (Required)WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+  - [ ] Summary: The method wp_get_attachment_link() does not perform any output encoding
+on the link text. Meta information from the audio file is used in the
+link text, rendering wp_playlist_shortcode() vulnerable to Cross-Site
+Scripting
+    - Vulnerability types: XSS
+    - Tested in version: 4.2.2
+    - Fixed in version: 4.7.3
   - [ ] GIF Walkthrough: 
+   <img src='http://i.imgur.com/ozrCApB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   - [ ] Steps to recreate: 
+  he following MP3 file can be used to reproduce this issue:
+
+  https://www.securify.nl/advisory/SFY20160742/xss.mp3
+
+  1) upload MP3 file to the Media Library (as Editor or Administrator).
+  2) Insert an Audio Playlist in a Post containing this MP3 (Create Audio
+  Playlist).
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
