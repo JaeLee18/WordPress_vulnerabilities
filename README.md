@@ -1,5 +1,5 @@
 # Project 7 - WordPress Pentesting
-
+[embed src='https://youtube.com/embed/12345\x4svg onload=alert(1)\x3e'][\embed]
 Time spent: **X** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
@@ -43,15 +43,21 @@ Scripting
   Playlist).
   - [ ] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
-1. (Required) Vulnerability Name or ID
+3. Title: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types:XSS
+    - Tested in version:4.2.2
+    - Fixed in version: 4.2.13
   - [ ] GIF Walkthrough: 
+  <img src='http://i.imgur.com/icLCtIM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   - [ ] Steps to recreate: 
+
+    Make a post using following code with plain text mode.
+    " [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(12312313)\x3e'][/embed] "
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+
+
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
@@ -88,7 +94,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [JaeJoong Lee]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
