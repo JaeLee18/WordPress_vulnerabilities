@@ -21,7 +21,8 @@ Time spent: **X** hours spent in total
       " <a href="</a><a title=" onmouseover=alert('test')  ">link</a> ""
 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    wp-includes/kses.php
+    wp-includes/shortcodes.php
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
