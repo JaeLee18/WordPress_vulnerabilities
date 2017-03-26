@@ -6,13 +6,19 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. Title: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
+
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2.2
+    - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
+  <blockquote class="imgur-embed-pub" lang="en" data-id="a/WTXqV"><a href="//imgur.com/WTXqV"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
   - [ ] Steps to recreate: 
+      Created a post using "Text" mode.
+      Put following code in the page.
+      <a href="</a><a title=" onmouseover=alert('test')  ">link</a>
+
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
